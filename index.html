@@ -1,88 +1,102 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-navigation__logo">
-          <img src="/img/logo.svg" width="154" height="64" alt="Логотип GllacyShop">
-        </a>
-        <ul class="site-navigation">
-          <li class="site-navigation__item"><a href="catalog.html">Каталог</a></li>
-          <li class="site-navigation__item"><a href="delivery.html">Доставка и оплата</a></li>
-          <li class="site-navigation__item"><a href="about.html">О Компании</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="user-navigation__item user-navigation__item--search">Поиск</li> 
-          <li class="user-navigation__item user-navigation__item--input">Вход</li>
-          <li class="user-navigation__item user-navigation__item--basket">Корзина</li>
-        </ul>
-      </nav>
-    </header>
-    <main class="wraper">
-      <!--здесь будут основные картинки, слайдер и пока скрытые заголовки:
+
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Глейси</title>
+</head>
+
+<body>
+	<header class="main-header container">
+		<nav class="main-navigation">
+			<a class="main-navigation__logo">
+				<img src="/img/logo.svg" width="154" height="64" alt="Логотип GllacyShop">
+			</a>
+			<ul class="site-navigation">
+				<li class="site-navigation__item"><a href="catalog.html">Каталог</a></li>
+				<li class="site-navigation__item"><a href="delivery.html">Доставка и оплата</a></li>
+				<li class="site-navigation__item"><a href="about.html">О Компании</a></li>
+			</ul>
+			<ul class="user-navigation">
+				<li class="user-navigation__item user-navigation__item--search">Поиск</li>
+				<li class="user-navigation__item user-navigation__item--input">Вход</li>
+				<li class="user-navigation__item user-navigation__item--basket">Корзина</li>
+			</ul>
+		</nav>
+		<div class="shop-info">
+			<p class="shop-info__time">С 10 до 20, ежедневно<span class="shop-info__phone">8 812 450-25-25</span></p>
+		</div>
+	</header>
+	<main class="wraper">
+		<!--здесь будут основные картинки, слайдер и пока скрытые заголовки:
       <h1>Крем-брюле и пломбир с малиновым джемом</h1>
       <h2>Малинка даром! и Шоколадка даром!</h2> -->
 
-      <section class="features">
-        <h3 class=features__title>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-        <div class="features__text">
-          <p class="features__text--mod">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
-          </p>
-        </div>
-        <div class="features__text">
-          <p class="features__text--mod">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. 
-          </p>
-        </div>
-        <div class="features__text">
-          <p class="features__text--mod">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-        </div>
-        <div class="features__text">
-          <p class="features__text--mod">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
-          </p>
-        </div>
-      </section>
-      <article class="article">
-        <p article__item>Новое в нашем блоге</p>
-        <a href="#" class="article__link">
-          <h3 article__link--title>10 способов сервировки фруктовых щербетов к столу</h3>
-        </a>
-      </article>
-      <section class="subscribe">
-        <p class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <!--здесь будет форма для подписки с кнопкой-->
-      </section>
-      <!--место для карты-->
-    </main>
-    <footer class="main-footer">
-      <div class="footer-social">
-        <ul class=social>
-          <li><a class="social__button" href="#">Твитер</a></li>
-          <li><a class="social__button" href="#">Инстаграм</a></li>
-          <li><a class="social__button" href="#">Фейсбук</a></li>
-          <li><a class="social__button" href="#">ВКонтакте</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <ul class="links">
-          <li><a class="links__link" href="#">Для поставщиков</a></li>
-          <li><a class="inks__link" href="#">О производстве</a></li>
-          <li><a class="links__link" href="#">Наши документы</a></li>
-          <li><a class="links__link" href="#">Экологические стандарты</a></li>
-        </ul>
-      </div>
-      <div class="developer-info">
-        <a class="developer-info__logo">
-          <img src="/img/logo-htmlacademy-small.svg" width="107" height="46" alt="Логотип htmlacademy">
-        </a>
-        <p class="developer-info__text">Сделано в 
-          <a class="developer-info__link" href="https://htmlacademy.ru">HTML Academy</a>
-          © 2017
-        </p>
-      </div>
-    </footer>
-  </body>
+		<section class="features container">
+			<h3 class=features__title>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
+				производства на развес</h3>
+			<div class="features__text">
+				<p class="features__text--mod">Все наше мороженое изготавливается на собственном производстве, с использованием
+					современного оборудования и проверенных временем технологий.
+				</p>
+			</div>
+			<div class="features__text">
+				<p class="features__text--mod">Для приготовления мороженого используются настоящие сливки и молоко высочайшего
+					качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+				</p>
+			</div>
+			<div class="features__text">
+				<p class="features__text--mod">Закупка ингредиентов производится только у проверенных фермерских хозяйств и
+					компаний, с которыми нас связывает долговременное сотрудничество.</p>
+			</div>
+			<div class="features__text">
+				<p class="features__text--mod">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+					который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+				</p>
+			</div>
+		</section>
+		<section class="container">
+			<article class="article">
+				<p article__item>Новое в нашем блоге</p>
+				<a href="#" class="article__link">
+					<h3 article__link--title>10 способов сервировки фруктовых щербетов к столу</h3>
+				</a>
+			</article>
+			<div class="subscribe">
+			<p class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у
+				нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+			<!--здесь будет форма для подписки с кнопкой-->
+			</div>
+		</section>
+		<!--место для карты-->
+	</main>
+	<footer class="main-footer container">
+		<div class="footer-social">
+			<ul class=social>
+				<li><a class="social__button" href="#">Твитер</a></li>
+				<li><a class="social__button" href="#">Инстаграм</a></li>
+				<li><a class="social__button" href="#">Фейсбук</a></li>
+				<li><a class="social__button" href="#">ВКонтакте</a></li>
+			</ul>
+		</div>
+		<div class="footer-links">
+			<ul class="links">
+				<li><a class="links__link" href="#">Для поставщиков</a></li>
+				<li><a class="inks__link" href="#">О производстве</a></li>
+				<li><a class="links__link" href="#">Наши документы</a></li>
+				<li><a class="links__link" href="#">Экологические стандарты</a></li>
+			</ul>
+		</div>
+		<div class="developer-info">
+			<a class="developer-info__logo">
+				<img src="/img/logo-htmlacademy-small.svg" width="107" height="46" alt="Логотип htmlacademy">
+			</a>
+			<p class="developer-info__text">Сделано в
+				<a class="developer-info__link" href="https://htmlacademy.ru">HTML Academy</a>
+				© 2017
+			</p>
+		</div>
+	</footer>
+</body>
+
 </html>
