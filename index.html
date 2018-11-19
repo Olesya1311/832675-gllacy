@@ -29,10 +29,65 @@
 		</div>
 	</header>
 	<main class="wraper">
-		<!--здесь будут основные картинки, слайдер и пока скрытые заголовки:
-      <h1>Крем-брюле и пломбир с малиновым джемом</h1>
-      <h2>Малинка даром! и Шоколадка даром!</h2> -->
-
+		<section class="slider-promo">
+			<div class="slider-promo__img slider-promo__img--1">
+				<img src="http://placehold.it/367x582" width="367" height="582" alt="Крем-брюле">
+			</div>
+			<div class="slider-promo__img slider-promo__img--2">
+				<img src="http://placehold.it/333x519" width="333" height="519" alt="Пломбир с малиновым джемом">
+			</div>
+			<h1 class="slider-promo__title">Крем-брюле и пломбир с малиновым джемом</h1>
+			<a class="slider-promo__button" href="#">Давайте оба!</a>
+			<ul class="slider-point">
+				<li class="slider-point__item slider-point__item--current">.</li>
+				<li class="slider-point__item">.</li>
+				<li class="slider-point__item">.</li>
+			</ul>
+		</section>
+		<section class="promotion">
+			<div class="promotion-block promotion-block--color1">
+				<h2>Малинка даром!</h2>
+				<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+				<a class="promotion-block__button" href="#">Хочу варенье!</a>
+			</div>
+			<div class="promotion-block promotion-block--color1">
+					<h2>Шоколадки даром!</h2>
+					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+					<a class="promotion-block__button" href="#">Хочу шоколадки!</a>
+				</div>
+		</section>
+		<section class="products">
+			<ul class="catalog-list">
+				<li class="catalog-list__item catalog-list__item--hit">
+					<div class="catalog-list__img">
+						<img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+					</div>
+					<p class=catalog-list__text><span>310</span>₽<span class="catalog-list__text--1">/кг</span></p>
+					<a class="catalog-list__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				</li>
+				<li class="catalog-list__item catalog-list__item--hit">
+					<div class="catalog-list__img">
+						<img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+					</div>
+					<p class=catalog-list__text><span>380</span>₽<span class="catalog-list__text--1">/кг</span></p>
+					<a class="catalog-list__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
+				</li>
+				<li class="catalog-list__item catalog-list__item--hit">
+					<div class="catalog-list__img">
+						<img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+					</div>
+					<p class=catalog-list__text><span>355</span>₽<span class="catalog-list__text--1">/кг</span></p>
+					<a class="catalog-list__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+				</li>
+				<li class="catalog-list__item catalog-list__item--hit">
+					<div class="catalog-list__img">
+						<img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+					</div>
+					<p class=catalog-list__text><span>415</span>₽<span class="catalog-list__text--1">/кг</span></p>
+					<a class="catalog-list__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+				</li>
+			</ul>
+		</section>
 		<section class="features container">
 			<h3 class=features__title>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
 				производства на развес</h3>
@@ -69,7 +124,19 @@
 			<!--здесь будет форма для подписки с кнопкой-->
 			</div>
 		</section>
-		<!--место для карты-->
+		<section class="map">
+			<div class="map__img">
+				<img src="http://placehold.it/1032x430" width="1032" height="430" alt="Схема проезда">
+			</div>
+			<div class="map__info">
+				<p>Адрес главного офиса и офлайн-магазина:</p>
+				<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+				<p>Для заказов по телефону:</p>
+				<a href="tel: +78124502525" class="map__phone">8 812 450-25-25</a>
+				<p>(с 10 до 20 ежедневно)</p>
+				<a class="map__button" href="#">Форма обратной связи</a>
+			</div>
+		</section>
 	</main>
 	<footer class="main-footer container">
 		<ul class=social>
