@@ -13,13 +13,42 @@
 				<img src="img/logo.svg" width="154" height="64" alt="GllacyShop">
 			</a>
 			<ul class="site-navigation">
-				<li class="site-navigation__item"><a href="catalog.html">Каталог</a></li>
+				<li class="site-navigation__item">
+					<a href="catalog.html">Каталог</a>
+						<ul class="catalog-menu">
+							<li class="catalog-menu__item catalog-menu__item--mod"><a href="#">Новинки</a></li>
+							<li class="catalog-menu__item"><a href="catalog.html">Сливочное</a></li>
+							<li class="catalog-menu__item catalog-menu__item--rose"><a href="#">Щербеты</a></li>
+							<li class="catalog-menu__item"><a href="#">Фруктовый лед</a></li>
+							<li class="catalog-menu__item"><a href="#">Мелорин</a></li>
+						</ul>
+				</li>
 				<li class="site-navigation__item"><a href="delivery.html">Доставка и оплата</a></li>
 				<li class="site-navigation__item"><a href="about.html">О Компании</a></li>
 			</ul>
 			<ul class="user-navigation">
-				<li class="user-navigation__item user-navigation__item--search"><a href="#">Поиск</a></li>
-				<li class="user-navigation__item user-navigation__item--input"><a href="#">Вход</a></li>
+				<li class="user-navigation__item user-navigation__item--search">
+					<a href="#">Поиск</a>
+						<form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+							<label  class="visually-hidden">Что ищем?
+								<input type="search" name="search" placeholder="Что ищем?">
+							</label>
+						</form>
+				</li>
+				<li class="user-navigation__item user-navigation__item--input">
+					<a href="#">Вход</a>
+						<form class="enter-form" action="https://echo.htmlacademy.ru"	method="POST">
+							<label class="visually-hidden">Электронная почта
+								<input type="email" name="email" placeholder="Электронная почта">
+							</label>
+							<label class="visually-hidden">Пароль
+								<input type="password" name="password" placeholder="Пароль">
+							</label>
+							<button class="button enter-form__button" type="submit">Войти</button>
+							<a class="enter-form__link" href="#">Забыли пароль?</a>
+							<a class="enter-form__link" href="#">Новая регистрация</a>
+						</form>
+				</li>
 				<li class="user-navigation__item user-navigation__item--basket"><a href="#">Корзина</a></li>
 			</ul>
 		</nav>
@@ -126,7 +155,12 @@
 			<div class="subscribe">
 			<p class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у
 				нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-			<!--здесь будет форма для подписки с кнопкой-->
+			<form class="subscribe__form" action="https://echo.htmlacademy.ru" method="POST">
+			<label class="visually-hidden">Электронная почта
+				<input type="email" name="email1" placeholder="Электронная почта">
+			</label>
+			<button class="button subscribe__button" type="submit">Отправить</button> 
+			</form>
 			</div>
 		</section>
 		<section class="map">
@@ -137,8 +171,24 @@
 				<p>Для заказов по телефону:</p>
 				<a href="tel: +78124502525" class="map__phone">8 812 450-25-25</a>
 				<p>(с 10 до 20 ежедневно)</p>
-				<a class="button map__button" href="#">Форма обратной связи</a>
+				<button class="button map__button" href="#">Форма обратной связи</button>
 			</div>
+		</section>
+		<section class="modal">
+			<h3 class="modal__title">Мы обязательно вам ответим!</h3>
+			<button class="modal__button" type="button">Закрыть</button>
+			<form class="modal-form">
+				<label class="visually-hidden">Ваше имя
+					<input type="text" name="name" placeholder="Как вас зовут?">
+				</label>
+				<label class="visually-hidden">Ваша почта
+					<input type="email" name="email2" placeholder="Ваша почта для ответа?">
+				</label>
+				<label class="visually-hidden">Текст сообщения
+					<textarea rows="5">Напишите что-нибудь...</textarea>
+				</label>
+				<button class="button modal__button" type="submit">Отправить</button>
+			</form>
 		</section>
 	</main>
 	<footer class="main-footer container">
