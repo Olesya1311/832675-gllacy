@@ -28,22 +28,21 @@
 			</ul>
 			<ul class="user-navigation">
 				<li class="user-navigation__item user-navigation__item--search">
-					<a href="#">Поиск</a>
+					<a href="#" class="user-navigation__link"><span class="visually-hidden">Поиск</span>
 						<form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
 							<label  class="visually-hidden">Что ищем?
 								<input type="search" name="search" placeholder="Что ищем?">
 							</label>
 						</form>
+						</a>
 				</li>
 				<li class="user-navigation__item user-navigation__item--input">
-					<a href="#">Вход</a>
+					<a href="#">Вход</a><!--внутри скрытого блока есть ссылки-->
 						<form class="enter-form" action="https://echo.htmlacademy.ru"	method="POST">
-							<label class="visually-hidden">Электронная почта
-								<input type="email" name="email" placeholder="Электронная почта">
-							</label>
-							<label class="visually-hidden">Пароль
-								<input type="password" name="password" placeholder="Пароль">
-							</label>
+							<label class="visually-hidden" for="enter-email">Электронная почта</label>
+							<input id="enter-email" type="email" name="email" placeholder="Электронная почта">
+							<label class="visually-hidden" for="enter-password">Пароль</label>
+							<input id="enter-password" type="password" name="password" placeholder="Пароль">
 							<button class="button enter-form__button" type="submit">Войти</button>
 							<a class="enter-form__link" href="#">Забыли пароль?</a>
 							<a class="enter-form__link" href="#">Новая регистрация</a>
@@ -58,7 +57,7 @@
 		</div>
 	</header>
 	<main class="wraper">
-		<h1 class="wraper__title--hidden">Магазин мороженого GlaccyShop</h1>
+		<h1 class="visually-hidden">Магазин мороженого GlaccyShop</h1>
 		<section class="slider-promo">
 			<div class="slider-promo__block slider-promo__block--current">
 				<p class="slider-promo__title">Крем-брюле и пломбир с малиновым джемом</p>
@@ -84,7 +83,7 @@
 				<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 				<a class="button promotion-block__button" href="#">Хочу варенье!</a>
 			</div>
-			<div class="promotion-block promotion-block--color1">
+			<div class="promotion-block promotion-block--color2">
 				<h2>Шоколадки даром!</h2>
 				<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 				<a class="button promotion-block__button" href="#">Хочу шоколадки!</a>
@@ -96,34 +95,34 @@
 					<div class="catalog-list__img">
 						<img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
-					<p class=catalog-list__text><span>310</span>₽<span class="catalog-list__text--1">/кг</span></p>
+					<p class="catalog-list__text"><span>310</span>₽<span class="catalog-list__text--1">/кг</span></p>
 					<a class="catalog-list__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 				</li>
 				<li class="catalog-list__item catalog-list__item--hit">
 					<div class="catalog-list__img">
 						<img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 					</div>
-					<p class=catalog-list__text><span>380</span>₽<span class="catalog-list__text--1">/кг</span></p>
+					<p class="catalog-list__text"><span>380</span>₽<span class="catalog-list__text--1">/кг</span></p>
 					<a class="catalog-list__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
 				</li>
 				<li class="catalog-list__item catalog-list__item--hit">
 					<div class="catalog-list__img">
 						<img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 					</div>
-					<p class=catalog-list__text><span>355</span>₽<span class="catalog-list__text--1">/кг</span></p>
+					<p class="catalog-list__text"><span>355</span>₽<span class="catalog-list__text--1">/кг</span></p>
 					<a class="catalog-list__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 				</li>
 				<li class="catalog-list__item catalog-list__item--hit">
 					<div class="catalog-list__img">
 						<img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 					</div>
-					<p class=catalog-list__text><span>415</span>₽<span class="catalog-list__text--1">/кг</span></p>
+					<p class="catalog-list__text"><span>415</span>₽<span class="catalog-list__text--1">/кг</span></p>
 					<a class="catalog-list__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
 				</li>
 			</ul>
 		</section>
 		<section class="features container">
-			<h3 class=features__title>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
+			<h3 class="features__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
 				производства на развес</h3>
 			<div class="features__text features__text--mod">
 				<p>Все наше мороженое изготавливается на собственном производстве, с использованием
@@ -156,9 +155,8 @@
 			<p class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у
 				нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
 			<form class="subscribe__form" action="https://echo.htmlacademy.ru" method="POST">
-			<label class="visually-hidden">Электронная почта
-				<input type="email" name="email1" placeholder="Электронная почта">
-			</label>
+			<label class="visually-hidden" for="subscribe-email">Электронная почта</label>
+			<input id="subscribe-email" type="email" name="email1" placeholder="Электронная почта">
 			<button class="button subscribe__button" type="submit">Отправить</button> 
 			</form>
 			</div>
@@ -178,25 +176,24 @@
 			<h3 class="modal__title">Мы обязательно вам ответим!</h3>
 			<button class="modal__button" type="button">Закрыть</button>
 			<form class="modal-form">
-				<label class="visually-hidden">Ваше имя
-					<input type="text" name="name" placeholder="Как вас зовут?">
-				</label>
-				<label class="visually-hidden">Ваша почта
-					<input type="email" name="email2" placeholder="Ваша почта для ответа?">
-				</label>
-				<label class="visually-hidden">Текст сообщения
-					<textarea rows="5">Напишите что-нибудь...</textarea>
-				</label>
+				<label class="visually-hidden" for="modal-name">Ваше имя</label>
+				<input id="modal-name" type="text" name="name" placeholder="Как вас зовут?">
+				
+				<label class="visually-hidden" for="modal-email">Ваша почта</label>
+				<input id="modal-email" type="email" name="email2" placeholder="Ваша почта для ответа?">
+				
+				<label class="visually-hidden" for="modal-comment">Текст сообщения</label>
+				<textarea id="modal-comment" rows="5" placeholder="Напишите что-нибудь..."></textarea>
 				<button class="button modal__button" type="submit">Отправить</button>
 			</form>
 		</section>
 	</main>
 	<footer class="main-footer container">
 		<ul class=social>
-			<li class="social__item"><a class="social__button" href="#">Твитер</a></li>
-			<li class="social__item"><a class="social__button" href="#">Инстаграм</a></li>
-			<li class="social__item"><a class="social__button" href="#">Фейсбук</a></li>
-			<li class="social__item"><a class="social__button" href="#">ВКонтакте</a></li>
+			<li class="social__item"><a class="social__button" href="#" aria-label="GllacyShop на Твитере"></a></li>
+			<li class="social__item"><a class="social__button" href="#" aria-label="GllacyShop в Инстаграме"></a></li>
+			<li class="social__item"><a class="social__button" href="#" aria-label="GllacyShop на Фейсбуке"></a></li>
+			<li class="social__item"><a class="social__button" href="#" aria-label="GllacyShop во ВКонтакте"></a></li>
 		</ul>
 		<ul class="links">
 			<li class="links__element"><a class="links__item" href="#">Для поставщиков</a></li>
