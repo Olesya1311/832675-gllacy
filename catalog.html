@@ -13,19 +13,68 @@
         <img src="img/logo.svg" width="154" height="64" alt="GllacyShop">
       </a>
       <ul class="site-navigation">
-        <li class="site-navigation__item"><a href="catalog.html">Каталог</a></li>
+        <li class="site-navigation__item">
+          <a href="catalog.html">Каталог</a>
+            <ul class="catalog-menu">
+							<li class="catalog-menu__item catalog-menu__item--mod"><a href="#">Новинки</a></li>
+							<li class="catalog-menu__item"><a href="catalog.html">Сливочное</a></li>
+							<li class="catalog-menu__item catalog-menu__item--rose"><a href="#">Щербеты</a></li>
+							<li class="catalog-menu__item"><a href="#">Фруктовый лед</a></li>
+							<li class="catalog-menu__item"><a href="#">Мелорин</a></li>
+						</ul>
+        </li>
         <li class="site-navigation__item"><a href="delivery.html">Доставка и оплата</a></li>
         <li class="site-navigation__item"><a href="about.html">О Компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="user-navigation__item user-navigation__item--search"><a href="#">Поиск</a></li>
-        <li class="user-navigation__item user-navigation__item--input"><a href="#">Вход</a></li>
-        <li class="user-navigation__item user-navigation__item--basket"><a href="#">Корзина</a></li>
+        <li class="user-navigation__item user-navigation__item--search">
+            <a href="#" class="user-navigation__link"><span class="visually-hidden">Поиск</span>
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+                <label  class="visually-hidden" for="search-line">Что ищем?</label>
+                <input id="search-line" type="search" name="search" placeholder="Что ищем?">
+              </form>
+              </a>
+        </li>
+        <li class="user-navigation__item user-navigation__item--input">
+          <a href="#">Вход</a>
+          <form class="enter-form" action="https://echo.htmlacademy.ru"	method="POST">
+            <label class="visually-hidden" for="enter-email">Электронная почта</label>
+            <input id="enter-email" type="email" name="email" placeholder="Электронная почта">
+            <label class="visually-hidden" for="enter-password">Пароль</label>
+            <input id="enter-password" type="password" name="password" placeholder="Пароль">
+            <button class="button enter-form__button" type="submit">Войти</button>
+            <a class="enter-form__link" href="#">Забыли пароль?</a>
+            <a class="enter-form__link" href="#">Новая регистрация</a>
+          </form>
+        </li>
+        <li class="user-navigation__item user-navigation__item--basket2">
+          <a href="#" aria-label="Корзина">2 товара
+            <ul class="basket-form">
+              <li class="basket-form__line">
+                <button class="basket-form__close" type="button">Закрыть</button>
+                <div class="basket-form__img">
+                <img src="img/plombir-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                </div>
+                Пломбир с апельсиновым джемом <span>1,5 кг х</span><span>200 руб.</span><span>300 руб.</span>
+              </li>
+              <li class="basket-form__line">
+                <button class="basket-form__close" type="button">Закрыть</button>
+                <div class="basket-form__img">
+                <img src="img/plombir-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой 
+                из белого шоколада">
+                </div>
+                Клубничный пломбир с присыпкой из белого шоколада<span>1,5 кг х</span><span>300 руб.</span><span>450 руб.</span>
+              </li>
+            </ul>
+              <p class="basket-form__summ">Итого:750 руб.</p>
+              <button class="button basket-form__button" type="button">Оформить заказ</button>
+          </a>
+        </li>
       </ul>
     </nav>
     <div class="shop-info">
       <p class="shop-info__time">С 10 до 20, ежедневно</p>
-      <a href="tel: +78124502525" class="shop-info__phone">8 812 450-25-25</a>
+      <a href="tel:+78124502525" class="shop-info__phone">8 812 450-25-25</a>
     </div>
   </header>
   <main class="container">
@@ -124,22 +173,22 @@
         </li>
       </ul>
       <ul class="pagination-list">
-        <li class="pagination-list__item pagination-list__item--disabled"><a>&lt;</a></li>
+        <li class="pagination-list__item pagination-list__item--disabled"><a aria-label="Назад">&lt;</a></li>
         <li class="pagination-list__item pagination-list__item--current"><a>1</a></li>
         <li class="pagination-list__item"><a href="#">2</a></li>
         <li class="pagination-list__item"><a href="#">3</a></li>
         <li class="pagination-list__item"><a href="#">4</a></li>
         <li class="pagination-list__item"><a href="#">5</a></li>
-        <li class="pagination-list__item"><a href="#">&gt;</a></li>
+        <li class="pagination-list__item"><a href="#" aria-label="Вперёд">&gt;</a></li>
       </ul>
     </section>
   </main>
   <footer class="main-footer container">
     <ul class=social>
-      <li class="social__item"><a class="social__button" href="#">Твитер</a></li>
-      <li class="social__item"><a class="social__button" href="#">Инстаграм</a></li>
-      <li class="social__item"><a class="social__button" href="#">Фейсбук</a></li>
-      <li class="social__item"><a class="social__button" href="#">ВКонтакте</a></li>
+      <li class="social__item"><a class="social__button" href="#" aria-label="GllacyShop на Твитере"></a></li>
+      <li class="social__item"><a class="social__button" href="#" aria-label="GllacyShop в Инстаграме"></a></li>
+      <li class="social__item"><a class="social__button" href="#" aria-label="GllacyShop на Фейсбуке"></a></li>
+      <li class="social__item"><a class="social__button" href="#" aria-label="GllacyShop во ВКонтакте"></a></li>
     </ul>
     <ul class="links">
       <li class="links__element"><a class="links__item" href="#">Для поставщиков</a></li>
@@ -150,8 +199,7 @@
     <div class="developer-info">
       <a class="developer-info__link" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-htmlacademy-small.svg" width="107" height="46" alt="HTML academy">Сделано в
-        <span class="developer-info__text">HTML Academy</span>
-        © 2017
+        <span class="developer-info__text">HTML Academy</span>© 2017
       </a>
     </div>
   </footer>
