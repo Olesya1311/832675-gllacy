@@ -14,7 +14,7 @@
 			</a>
 			<ul class="site-navigation">
 				<li class="site-navigation__item">
-					<a href="catalog.html">Каталог</a>
+					<a href="catalog.html">Каталог</a><!--в подменю есть ссылки-->
 						<ul class="catalog-menu">
 							<li class="catalog-menu__item catalog-menu__item--mod"><a href="#">Новинки</a></li>
 							<li class="catalog-menu__item"><a href="catalog.html">Сливочное</a></li>
@@ -30,9 +30,8 @@
 				<li class="user-navigation__item user-navigation__item--search">
 					<a href="#" class="user-navigation__link"><span class="visually-hidden">Поиск</span>
 						<form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-							<label  class="visually-hidden">Что ищем?
-								<input type="search" name="search" placeholder="Что ищем?">
-							</label>
+							<label  class="visually-hidden" for="search-line">Что ищем?</label>
+							<input id="search-line" type="search" name="search" placeholder="Что ищем?">
 						</form>
 						</a>
 				</li>
@@ -48,7 +47,8 @@
 							<a class="enter-form__link" href="#">Новая регистрация</a>
 						</form>
 				</li>
-				<li class="user-navigation__item user-navigation__item--basket"><a href="#" aria-label="корзина">Пусто</a></li>
+				<li class="user-navigation__item user-navigation__item--basket1">
+					<a href="#" aria-label="Корзина">Пусто</a></li>
 			</ul>
 		</nav>
 		<div class="shop-info">
@@ -178,10 +178,8 @@
 			<form class="modal-form">
 				<label class="visually-hidden" for="modal-name">Ваше имя</label>
 				<input id="modal-name" type="text" name="name" placeholder="Как вас зовут?">
-				
 				<label class="visually-hidden" for="modal-email">Ваша почта</label>
 				<input id="modal-email" type="email" name="email2" placeholder="Ваша почта для ответа?">
-				
 				<label class="visually-hidden" for="modal-comment">Текст сообщения</label>
 				<textarea id="modal-comment" rows="5" placeholder="Напишите что-нибудь..."></textarea>
 				<button class="button modal__button" type="submit">Отправить</button>
@@ -209,5 +207,4 @@
 		</div>
 	</footer>
 </body>
-
 </html>
