@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+  
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #849d8f;
+  }
+a {
+    text-decoration: none;
+  }
+.main-navigation {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #849d8f
+}
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+.site-navigation a,
+.user-navigation a {
+    color: #ffffff;
+}
+.site-navigation a{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.user-navigation {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+.user-navigation a {
+    background-color: rgba(255, 255, 255, 0.2);
+  
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+   background-color: #f7f6f3;
+   color: #333333;
+}
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #f8f7f4;
+  color: #323232;
+}
+.search-form,
+.catalog-menu,
+.enter-form,
+h1 {
+    display: none;
+}
+.shop-info {
+  text-align: right;
+}
+.shop-info__time {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px; 
+}
+.shop-info__phone {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.button {
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
+  color: #ffffff;
+}
