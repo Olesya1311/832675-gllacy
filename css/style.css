@@ -1,48 +1,48 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
   
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 700;
-    color: #ffffff;
-    background-color: #849d8f;
-  }
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #849d8f;
+}
 a {
     text-decoration: none;
   }
 .main-navigation {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18px;
-    color: #ffffff;
-    background-color: #849d8f
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #849d8f
 }
 .site-navigation,
 .user-navigation {
-    list-style: none;
+  list-style: none;
 }
 .site-navigation a,
 .user-navigation a {
-    color: #ffffff;
+  color: #ffffff;
 }
 .site-navigation a{
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .user-navigation {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
 }
 .user-navigation a {
-    background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   
 }
 .site-navigation a:hover,
 .site-navigation a:focus {
-   background-color: #f7f6f3;
-   color: #333333;
+  background-color: #f7f6f3;
+  color: #333333;
 }
 .user-navigation a:hover,
 .user-navigation a:focus {
@@ -53,7 +53,7 @@ a {
 .catalog-menu,
 .enter-form,
 h1 {
-    display: none;
+  display: none;
 }
 .shop-info {
   text-align: right;
@@ -94,4 +94,32 @@ h1 {
   font-weight: 400;
   line-height: 22px;
   text-align: left;
+}
+.article {
+  background-color: #ffffff;
+  background-image: url("../img/strawberry.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  color: #323232;
+  /*размеры указаны для наглядности вставки фона-нет в задании*/
+  min-height: 220px;
+  width: 560px;
+  border-radius: 15px;
+}
+.article__item {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
+  color: #323232;
+}
+.article__link {
+  text-decoration: underline;
+  color: #323232;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: left;
+  font-stretch: normal;
 }
