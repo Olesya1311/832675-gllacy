@@ -20,7 +20,9 @@ a {
   background-color: #849d8f
 }
 .site-navigation,
-.user-navigation {
+.user-navigation,
+.social,
+.links {
   list-style: none;
 }
 .site-navigation a,
@@ -136,7 +138,11 @@ h1 {
   text-align: left;
 }
 .article a:hover,
-.article a:focus {
+.article a:focus,
+.links a:hover,
+.links a:focus,
+.developer-info a:hover,
+.developer-info a:focus {
   color: #ffbc9e;
 }
 .subscribe {
@@ -159,4 +165,35 @@ h1 {
   font-weight: 400;
   line-height: 22px;
   text-align: left;
+}
+.main-footer {
+  color: #ffffff;
+  background-color: #849d8f;
+}
+.social__item a{
+  display: block; 
+  border:3px solid rgba(255, 255, 255, 0.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.social__item a:hover,
+.social__item a:focus {
+  opacity: 1;
+  border:3px solid rgba(255, 255, 255, 0.7)
+}
+.social__item:first-child a {
+  background-image: url("../img/icon-twitter.svg");
+}
+.social__item:nth-child(2) a{
+  background-image: url("../img/icon-instagram.svg");
+}
+.social__item:nth-child(3) a{
+  background-image: url("../img/icon-fb.svg");
+}
+.social__item:nth-child(4) a{
+  background-image: url("../img/icon-vk.svg");
 }
