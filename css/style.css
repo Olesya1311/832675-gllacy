@@ -29,7 +29,9 @@ a {
 .user-navigation a {
   color: #ffffff;
 }
-.site-navigation a{
+.site-navigation a,
+.links a,
+.developer-info__text {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .user-navigation {
@@ -144,6 +146,7 @@ h1 {
 .developer-info a:hover,
 .developer-info a:focus {
   color: #ffbc9e;
+  border-bottom-color: rgba(255, 188, 158, 0.2);
 }
 .subscribe {
   background-color: #f8f7f4;
@@ -196,4 +199,21 @@ h1 {
 }
 .social__item:nth-child(4) a{
   background-image: url("../img/icon-vk.svg");
+}
+.links a{
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ffffff;
+}
+.links__element:first-child a {
+  font-weight: bold;
+}
+.developer-info__link {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #fefefe;
 }
