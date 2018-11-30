@@ -274,3 +274,123 @@ h1,
   line-height: 22px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+.slider-promo__block {
+  color: #ffffff;
+}
+.slider-promo__block--1 {
+  background-color: #849d8f;
+  background-image: url("../img/group-1.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 1225px;
+  height: 1000px;
+}
+.slider-promo__block--2 {
+  background-color: #8996a6;
+  background-image: url("../img/group-2.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 1225px;
+  height: 1000px;
+}
+.slider-promo__block--3 {
+  background-color: #9d8b84;
+  background-image: url("../img/group-3.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 1225px;
+  height: 1000px;
+}
+.slider-promo__title {
+  font-family: Roboto;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+}
+.slider-promo__button {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+}
+.promotion-block {
+  color: #ffffff;
+}
+.promotion-block h2 {
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+  text-align: left; 
+}
+.promotion-block p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+}
+.promotion-block__button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+.slider-point {
+  list-style: none;
+}
+.slider-point__item {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border:2px solid #ffffff;
+  background-color: transparent;
+}
+.slider-point__item--current {
+  background-color: #ffffff;
+}
+.slider-point__item:hover,
+.slider-point__item:focus {
+  background-color: rgba(248, 247, 244, 0.4);
+}
+.slider-point__item--current:hover,
+.slider-point__item--current:focus {
+  background-color: #ffffff;
+}
+.promotion-block {
+  color: #ffffff;
+}
+.promotion-block h2 {
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 41px;
+}
+.promotion-block p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+}
+.promotion-block__button {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+.promotion-block--color1 {
+  background-color: #630b26;
+  background-image: url("../img/malina.jpg");
+  width: 560px;
+  height: 229px;
+  border-radius: 15px;
+}
+.promotion-block--color2 {
+  background-color: #6f3d19;
+  background-image: url("../img/chokolate.jpg");
+  width: 560px;
+  height: 229px;
+  border-radius: 15px;
+}
