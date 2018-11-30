@@ -152,8 +152,10 @@ h1,
   line-height: 30px;
   text-align: left;
 }
-.article a:hover,
-.article a:focus,
+.article__link:hover h3,
+.article__link:focus h3,
+.article__link:hover,
+.article__link:focus,
 .links a:hover,
 .links a:focus,
 .developer-info a:hover,
