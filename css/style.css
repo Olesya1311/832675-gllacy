@@ -62,7 +62,10 @@ a {
 h1,
 .basket-form,
 .basket-form__summ,
-.basket-form__button {
+.basket-form__button,
+.modal-form,
+.modal__title,
+ .modal__button-close {
   display: none;
 }
 .shop-info {
@@ -395,4 +398,48 @@ h1,
   width: 560px;
   height: 229px;
   border-radius: 15px;
+}
+.map__img {
+  background-color: #f7f1d9;
+  background-image: url("../img/map.jpg");
+  height: 430px;
+}
+.map__info {
+  background-color: #ffffff;
+  color: #323232;
+  width: 302px;
+  height: 305px;
+  border-radius: 5px; /*test*/
+}
+.map__info p {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 20px;
+  color: #323232;
+}
+.map__time {
+  line-height: 22px;
+}
+.map__info b {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #323232;
+  text-align: left;
+}
+.map__phone {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #323232;
+  text-align: left;
+}
+.map__button {
+  color: #fefefe;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: left;
 }
