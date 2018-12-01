@@ -62,14 +62,17 @@ a {
 h1,
 .basket-form,
 .basket-form__summ,
-.basket-form__button {
+.basket-form__button,
+.modal-form,
+.modal__title,
+ .modal__button-close {
   display: none;
 }
 .shop-info {
   text-align: right;
+  color: #ffffff;
 }
 .shop-info__time {
-  color: #ffffff;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px; 
@@ -82,6 +85,7 @@ h1,
 }
 .button {
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-color: rgb(231, 74, 53);
   background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
   color: #ffffff;
   border: none;
@@ -139,14 +143,22 @@ h1,
 .article__link {
   text-decoration: underline;
   color: #323232;
-  font-family: "Roboto";
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   text-align: left;
 }
-.article a:hover,
-.article a:focus,
+.article__link h3 {
+  color: #323232;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+}
+.article__link:hover h3,
+.article__link:focus h3,
+.article__link:hover,
+.article__link:focus,
 .links a:hover,
 .links a:focus,
 .developer-info a:hover,
@@ -179,7 +191,7 @@ h1,
   color: #ffffff;
   background-color: #849d8f;
 }
-.social__item a{
+.social__button {
   display: block; 
   border:3px solid rgba(255, 255, 255, 0.5);
   background-position: center;
@@ -189,21 +201,21 @@ h1,
   height: 32px;
   border-radius: 50%;
 }
-.social__item a:hover,
-.social__item a:focus {
+.social__button:hover,
+.social__button:focus {
   opacity: 1;
   border:3px solid rgba(255, 255, 255, 0.7)
 }
-.social__item:first-child a {
+.social__button--1 {
   background-image: url("../img/icon-twitter.svg");
 }
-.social__item:nth-child(2) a{
+.social__button--2 {
   background-image: url("../img/icon-instagram.svg");
 }
-.social__item:nth-child(3) a{
+.social__button--3 {
   background-image: url("../img/icon-fb.svg");
 }
-.social__item:nth-child(4) a{
+.social__button--4 {
   background-image: url("../img/icon-vk.svg");
 }
 .links a{
@@ -226,7 +238,7 @@ h1,
 .catalog-list__button {
   display: none;
 }
-.site-navigation__item--red a {
+.site-navigation__item--color a {
   background-color: #d07058;
 }
 .user-navigation__item--basket2 a{
@@ -266,4 +278,206 @@ h1,
   font-weight: 500;
   line-height: 22px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.slider-promo__block {
+  color: #ffffff;
+}
+.slider-promo__block--1 {
+  background-color: #849d8f;
+  background-image: url("../img/group-1.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 1225px;
+  height: 1000px;
+}
+.slider-promo__block--2 {
+  background-color: #8996a6;
+  background-image: url("../img/group-2.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 1225px;
+  height: 1000px;
+}
+.slider-promo__block--3 {
+  background-color: #9d8b84;
+  background-image: url("../img/group-3.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 1225px;
+  height: 1000px;
+}
+.slider-promo__title {
+  font-family: Roboto;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+}
+.slider-promo__button {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+}
+.promotion-block {
+  color: #ffffff;
+}
+.promotion-block h2 {
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+  text-align: left; 
+}
+.promotion-block p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+}
+.promotion-block__button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+.slider-point {
+  list-style: none;
+}
+.slider-point__item {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border:2px solid #ffffff;
+  background-color: transparent;
+}
+.slider-point__item--current {
+  background-color: #ffffff;
+}
+.slider-point__item:hover,
+.slider-point__item:focus {
+  background-color: rgba(248, 247, 244, 0.4);
+}
+.slider-point__item--current:hover,
+.slider-point__item--current:focus {
+  background-color: #ffffff;
+}
+.promotion-block {
+  color: #ffffff;
+}
+.promotion-block h2 {
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 41px;
+}
+.promotion-block p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+}
+.promotion-block__button {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+.promotion-block--color1 {
+  background-color: #630b26;
+  background-image: url("../img/malina.jpg");
+  width: 560px;
+  height: 229px;
+  border-radius: 15px;
+}
+.promotion-block--color2 {
+  background-color: #6f3d19;
+  background-image: url("../img/chokolate.jpg");
+  width: 560px;
+  height: 229px;
+  border-radius: 15px;
+}
+.map__img {
+  background-color: #f7f1d9;
+  background-image: url("../img/map.jpg");
+  height: 430px;
+}
+.map__info {
+  background-color: #ffffff;
+  color: #323232;
+  width: 302px;
+  height: 305px;
+  border-radius: 5px; /*test*/
+}
+.map__info p {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 20px;
+  color: #323232;
+}
+.map__time {
+  line-height: 22px;
+}
+.map__info b {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #323232;
+  text-align: left;
+}
+.map__phone {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #323232;
+  text-align: left;
+}
+.map__button {
+  color: #fefefe;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+.pagination-list {
+  list-style: none;
+}
+.pagination-list__item  {
+  width: 27px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.pagination-list__item a{
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+/*выровнять цифры по центру!*/
+.pagination-list__item--disabled a{
+  opacity: 0.2;
+}
+.pagination-list__item--current{
+  background-color: #ffffff;
+}
+.pagination-list__item--current a {
+color: #323232;
+}
+.pagination-list__item:hover,
+.pagination-list__item:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.pagination-list__item--current:hover,
+.pagination-list__item--current:focus {
+  background-color: #ffffff;
+}
+.pagination-list__item--disabled:hover,
+.pagination-list__item--disabled:focus {
+ background-color: transparent;
 }
