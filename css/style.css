@@ -443,3 +443,41 @@ h1,
   font-weight: 700;
   text-align: left;
 }
+.pagination-list {
+  list-style: none;
+}
+.pagination-list__item  {
+  width: 27px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.pagination-list__item a{
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+/*выровнять цифры по центру!*/
+.pagination-list__item--disabled a{
+  opacity: 0.2;
+}
+.pagination-list__item--current{
+  background-color: #ffffff;
+}
+.pagination-list__item--current a {
+color: #323232;
+}
+.pagination-list__item:hover,
+.pagination-list__item:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.pagination-list__item--current:hover,
+.pagination-list__item--current:focus {
+  background-color: #ffffff;
+}
+.pagination-list__item--disabled:hover,
+.pagination-list__item--disabled:focus {
+ background-color: transparent;
+}
