@@ -10,8 +10,8 @@
 </head>
 
 <body>
-	<header class="main-header container">
-		<nav class="main-navigation">
+	<header class="main-header">
+		<nav class="main-navigation container">
 			<a class="main-navigation__logo">
 				<img src="img/logo.svg" width="154" height="64" alt="GllacyShop">
 			</a>
@@ -128,30 +128,31 @@
 				</li>
 			</ul>
 		</section>
-		<section class="features container">
-			<h3 class="features__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
+		<div class="container">
+			<section class="features">
+				<h3 class="features__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
 				производства на развес</h3>
-			<div class="features__text features__text--mod">
-				<p>Все наше мороженое изготавливается на собственном производстве, с использованием
+				<div class="features__block">
+					<div class="features__text features__text--mod1">
+						<p>Все наше мороженое изготавливается на собственном производстве, с использованием
 					современного оборудования и проверенных временем технологий.
-				</p>
-			</div>
-			<div class="features__text features__text--mod">
-				<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего
+						</p>
+						<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего
 					качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-				</p>
-			</div>
-			<div class="features__text features__text--mod">
-				<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и
-					компаний, с которыми нас связывает долговременное сотрудничество.</p>
-			</div>
-			<div class="features__text features__text--mod">
-				<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+						</p>
+					</div>
+					<div class="features__text features__text--mod2">
+						<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и
+					компаний, с которыми нас связывает долговременное сотрудничество.
+						</p>
+						<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
 					который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
-				</p>
-			</div>
-		</section>
-		<section class="container">
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<section class="wrapper-article container">
 			<article class="article">
 				<p class="article__item">Новое в нашем блоге</p>
 				<a href="#" class="article__link">
@@ -193,24 +194,30 @@
 			</form>
 		</section>
 	</main>
-	<footer class="main-footer container">
+	<footer class="main-footer">
+		<div class="container">
 		<ul class=social>
 			<li class="social__item"><a class="social__button social__button--1" href="#" aria-label="GllacyShop на Твитере"></a></li>
 			<li class="social__item"><a class="social__button social__button--2" href="#" aria-label="GllacyShop в Инстаграме"></a></li>
 			<li class="social__item"><a class="social__button social__button--3" href="#" aria-label="GllacyShop на Фейсбуке"></a></li>
 			<li class="social__item"><a class="social__button social__button--4" href="#" aria-label="GllacyShop во ВКонтакте"></a></li>
 		</ul>
-		<ul class="links">
-			<li class="links__element"><a class="links__item" href="#">Для поставщиков</a></li>
-			<li class="links__element"><a class="links__item" href="#">О производстве</a></li>
-			<li class="links__element"><a class="links__item" href="#">Наши документы</a></li>
-			<li class="links__element"><a class="links__item" href="#">Экологические стандарты</a></li>
-		</ul>
+		<div class="links">
+			<div class="links__block1">
+				<a class="links__item" href="#">Для поставщиков</a>
+				<a class="links__item" href="#">О производстве</a>
+			</div>
+			<div class="links__block2">
+				<a class="links__item" href="#">Наши документы</a>
+				<a class="links__item" href="#">Экологические стандарты</a>
+			</div>
+		</div>
 		<div class="developer-info">
 			<a class="developer-info__link" href="https://htmlacademy.ru/intensive/htmlcss">
 				<img src="img/logo-htmlacademy-small.svg" width="107" height="46" alt="HTML academy">Сделано в
 				<span class="developer-info__text">HTML Academy</span>© 2017
 			</a>
+		</div>
 		</div>
 	</footer>
 </body>
