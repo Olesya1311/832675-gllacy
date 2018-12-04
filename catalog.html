@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <nav class="main-navigation container">
+  <header class="main-header container">
+    <nav class="main-navigation">
       <a class="main-navigation__logo" href="index.html">
         <img src="img/logo.svg" width="154" height="64" alt="GllacyShop">
       </a>
@@ -205,16 +205,22 @@
       <li class="social__item"><a class="social__button social__button--3" href="#" aria-label="GllacyShop на Фейсбуке"></a></li>
       <li class="social__item"><a class="social__button social__button--4" href="#" aria-label="GllacyShop во ВКонтакте"></a></li>
     </ul>
-    <ul class="links">
-      <li class="links__element"><a class="links__item" href="#">Для поставщиков</a></li>
-      <li class="links__element"><a class="links__item" href="#">О производстве</a></li>
-      <li class="links__element"><a class="links__item" href="#">Наши документы</a></li>
-      <li class="links__element"><a class="links__item" href="#">Экологические стандарты</a></li>
-    </ul>
+    <div class="links">
+      <div class="links__block1">
+        <a class="links__item" href="#">Для поставщиков</a>
+        <a class="links__item" href="#">О производстве</a>
+      </div>
+      <div class="links__block2">
+        <a class="links__item" href="#">Наши документы</a>
+        <a class="links__item" href="#">Экологические стандарты</a>
+      </div>
+    </div>
     <div class="developer-info">
       <a class="developer-info__link" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy-small.svg" width="107" height="46" alt="HTML academy">Сделано в
+        <img src="img/logo-htmlacademy-small.svg" width="107" height="46" alt="HTML academy">
+        <p>Сделано в
         <span class="developer-info__text">HTML Academy</span>© 2017
+        </p>
       </a>
     </div>
   </footer>
