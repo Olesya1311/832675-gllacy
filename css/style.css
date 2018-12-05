@@ -409,11 +409,10 @@ h1,
 .catalog-list__img {
   width: 267px;
   height: 267px;
-  border-radius: 50%;
+  border-radius: 100%;
+  overflow: hidden;
 }
-.catalog-list__img img {
-overflow: hidden;
-}
+
 .catalog-list__text {
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
   font-family: Roboto;
@@ -438,8 +437,9 @@ overflow: hidden;
   text-align: center;
   padding: 0;
   margin: 0;
-  padding: 15px 15px 0 15px;
+  padding: 15px 18px 0 12px;
   vertical-align: top;
+  margin-bottom: 36px;
 }
 .slider-promo__block {
   color: #ffffff;
