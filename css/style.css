@@ -407,8 +407,7 @@ h1,
   width: 25%;
 }
 .catalog-list__img {
-  width: 267px;
-  height: 267px;
+  line-height: 0;
   border-radius: 100%;
   overflow: hidden;
 }
