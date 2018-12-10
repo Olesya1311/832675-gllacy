@@ -32,6 +32,8 @@ a {
   line-height: 18px;
   color: #ffffff;
   background-color: transparent;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .site-navigation,
 .user-navigation,
@@ -44,7 +46,6 @@ a {
   color: #ffffff;
 }
 .site-navigation a,
-.links a,
 .developer-info__text,
 .breadcrumbs__item:first-child,
 .breadcrumbs__item:nth-of-type(2) {
@@ -61,7 +62,7 @@ a {
 .site-navigation {
   margin: 0;
   padding: 0;
-  margin-right: 374px;
+  margin-right: auto;
 }
 .user-navigation {
   margin: 0;
@@ -69,6 +70,7 @@ a {
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
+  margin-left: auto;
 }
 .user-navigation a {
   background-color: rgba(255, 255, 255, 0.2);
@@ -104,8 +106,8 @@ h1,
 .shop-info {
   padding: 0;
   margin: 0;
-  margin-left: 979px;
-
+  margin-left: auto;
+  margin-top: -15px;
   text-align: right;
   color: #ffffff;
 }
@@ -163,16 +165,16 @@ h1,
   padding-bottom: 22px;
 }
 .features__text {
-  width: 42%;
+  width: calc(50% - 91px);
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   text-align: left;
   margin: 0;
   padding: 0;
-  margin-right: auto;
-  margin-left: 76px;
   padding-bottom: 22px;
+  padding-left: 76px;
+  padding-right: 15px;
 } 
 .wrapper-article {
   margin-bottom: 39px;
@@ -268,7 +270,7 @@ h1,
   display: flex;
   margin: 0;
   padding: 0;
-  margin-right: 235px;
+  margin-right: auto;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 32px;
@@ -308,10 +310,10 @@ h1,
   margin-right: 100px;
   align-items: center;
   justify-content: space-between;
-  width: 27%;
   margin-bottom: 31px;
 }
 .links a{
+  display: block;
   font-family: Roboto;
   font-size: 13px;
   font-weight: 400;
@@ -319,6 +321,8 @@ h1,
   color: #ffffff;
   margin: 0;
   padding: 0;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 .links__block1 .links__item:first-child {
   font-weight: bold;
@@ -329,8 +333,6 @@ h1,
   width: 36%;
 }
 .links__block2 {
-  display: flex;
-  flex-wrap: wrap;
   width: calc(64% - 32px);
 }
 .developer-info {
@@ -400,11 +402,12 @@ h1,
   padding: 0;
   justify-content: space-between;
   align-items: flex-start;
+  width: 100%;
 }
 .catalog-list__item {
   display: flex;
   flex-wrap: wrap;
-  width: 25%;
+  width: calc(25% - 27px);
 }
 .catalog-list__img {
   line-height: 0;
