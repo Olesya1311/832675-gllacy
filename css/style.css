@@ -265,6 +265,9 @@ h1,
   color: #ffffff;
   background-color: #849d8f;
   margin-top: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 .social {
   display: flex;
@@ -323,17 +326,11 @@ h1,
   padding: 0;
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.2);
+  margin-right: auto;
+  padding-right: 32px;
 }
 .links__block1 .links__item:first-child {
   font-weight: bold;
-}
-.links__block1 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 36%;
-}
-.links__block2 {
-  width: calc(64% - 32px);
 }
 .developer-info {
   display: flex;
@@ -408,6 +405,10 @@ h1,
   display: flex;
   flex-wrap: wrap;
   width: calc(25% - 27px);
+  margin-left: -13px;
+  margin-right: -14px;
+  padding-left: 13px;
+  padding-right: 14px;
 }
 .catalog-list__img {
   line-height: 0;
