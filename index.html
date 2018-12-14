@@ -10,6 +10,10 @@
 </head>
 
 <body>
+	<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+	<div class="site-wrapper">
 	<header class="main-header container">
 		<nav class="main-navigation">
 			<a class="main-navigation__logo">
@@ -62,23 +66,25 @@
 	<main class="wraper">
 		<div class="container">
 			<h1 class="visually-hidden">Магазин мороженого GllacyShop</h1>
-			<section class="slider-promo">
-				<div class="slider-promo__block slider-promo__block--1 slider-promo__block--current">
-					<p class="slider-promo__title">Крем-брюле и пломбир с малиновым джемом</p>
-					<a class="button slider-promo__button" href="#">Давайте оба!</a>
+			<section class="slider">
+				<div class="slider-point">
+					<label for="product-1">Первый</label>
+					<label for="product-2">Второй</label>
+					<label for="product-3">Третий</label>
 				</div>
-				<div class="slider-promo__block slider-promo__block--2">
-					<p class="slider-promo__title">Шоколадный пломбир и лимонный сорбет</p>
-					<a class="button slider-promo__button" href="#">Давайте оба!</a>
-				</div>
-				<div class="slider-promo__block slider-promo__block--3">
-					<p class="slider-promo__title">Пломбир с помадкой и клубничный щербет</p>
-					<a class="button slider-promo__button" href="#">Давайте оба!</a>
-				</div>
-				<ul class="slider-point">
-					<li class="slider-point__item slider-point__item--current"></li>
-					<li class="slider-point__item"></li>
-					<li class="slider-point__item"></li>
+				<ul class="slider-promo">
+					<li class="slider-promo__block slide" id="slide1">
+						<h2 class="slider-promo__title">Крем-брюле и пломбир с малиновым джемом</h2>
+						<a class="button slider-promo__button" href="#">Давайте оба!</a>
+					</li>
+					<li class="slider-promo__block slide" id="slide2">
+						<h2 class="slider-promo__title">Шоколадный пломбир и лимонный сорбет</h2>
+						<a class="button slider-promo__button" href="#">Давайте оба!</a>
+					</li>
+					<li class="slider-promo__block slide" id="slide3">
+						<h2 class="slider-promo__title">Пломбир с помадкой и клубничный щербет</h2>
+						<a class="button slider-promo__button" href="#">Давайте оба!</a>
+					</li>
 				</ul>
 			</section>
 			<section class="promotion">
@@ -214,5 +220,6 @@
 			</a>
 		</div>
 	</footer>
+	</div>
 </body>
 </html>
