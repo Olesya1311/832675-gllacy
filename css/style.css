@@ -221,7 +221,6 @@ h1,
 .modal__title,
  .modal__button-close,
  .pagination-list,
- .map,
  .subscribe__form {
   display: none;
 }
@@ -492,9 +491,7 @@ h1,
 
 }
 /*.catalog-list__text span:first-of-type,*/
-.products {
-  margin-bottom: 40px;
-}
+
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
@@ -512,6 +509,7 @@ h1,
   margin-right: -14px;
   padding-left: 13px;
   padding-right: 14px;
+  margin-bottom: 40px;
 }
 .catalog-list__img {
   line-height: 0;
@@ -602,41 +600,53 @@ h1,
   border-radius: 15px;
   background-position: 0 0;
 }
-.map__img {
+.map {
   background-color: #f7f1d9;
   background-image: url("../img/map.jpg");
-  height: 430px;
-}
-.map {
-  position: relative;/*test*/
+  background-repeat: no-repeat; 
+  margin-bottom: 15px;
 }
 .map__info {
-  position: absolute;
-  top: 63px;
-  left: 871px;
-  z-index: 2;
+  width: 22%;
+ margin-right: 0;
+ margin-left: auto;
+ margin-top: 63px;
+ margin-bottom: 62px;
+ padding-top: 30px;
+ padding-left: 25px;
+ padding-bottom: 31px;
+ padding-right: 25px;
   background-color: #ffffff;
   color: #323232;
-  width: 302px;
-  height: 305px;
-  border-radius: 5px; /*test*/
+  border-radius: 15px; /*test*/
+  text-align: left;
 }
 .map__info p {
+  display: block;
   font-size: 14px;
   font-weight: 400;
   text-align: left;
   line-height: 20px;
   color: #323232;
+  padding: 0;
+  margin: 0;
+
 }
 .map__time {
   line-height: 22px;
+  margin: 0;
+  padding: 0;
 }
 .map__info b {
+  display: block;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   color: #323232;
   text-align: left;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 17px;
 }
 .map__phone {
   font-family: "Roboto";
@@ -645,6 +655,9 @@ h1,
   line-height: 22px;
   color: #323232;
   text-align: left;
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 3px;
 }
 .map__button {
   color: #fefefe;
@@ -652,6 +665,8 @@ h1,
   line-height: 24px;
   font-weight: 700;
   text-align: left;
+  padding: 11px 28px;
+  margin-top: 22px;
 }
 .pagination-list {
   list-style: none;
