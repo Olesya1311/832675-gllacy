@@ -42,6 +42,10 @@ img {
   background-repeat: no-repeat;
   background-position: top center;
 }
+.catalog-wrapper {
+  min-width: 1200px;
+  background-color: #849d8f;
+}
 .slider {
   position: relative;
   
@@ -225,11 +229,55 @@ img {
   background-color: rgba(255, 255, 255, 0.2);
   margin-top: 23px;
   padding-left: 45px;
-  padding-right: 17px;
+  padding-right: 16px;
   padding-top: 7px;
-  padding-bottom: 7px;
+  padding-bottom: 8px;
   border-radius: 15px;
   margin-left: 10px;
+  position: relative;
+}
+.user-navigation__item .user-navigation__link {
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 16px;
+  border-radius: 50%;
+}
+.user-navigation__item--input a::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 19px;
+  left: 17px;
+  background-image: url("../img/icon-enter.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+.user-navigation__item--basket1 a::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  left: 17px;
+  background-image: url("../img/icon-basket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.user-navigation__item .user-navigation__link:active,
+.user-navigation__item .user-navigation__link:hover,
+.user-navigation__item .user-navigation__link:focus {
+  background-image: url("../img/icon-search-hover.svg");
+}
+.user-navigation__item--input a:active::before,
+.user-navigation__item--input a:focus::before,
+.user-navigation__item--input a:hover::before {
+  background-image: url("../img/icon-input-hover.svg");
+}
+.user-navigation__item--basket1 a:active::before,
+.user-navigation__item--basket1 a:focus::before,
+.user-navigation__item--basket1 a:hover::before {
+  background-image: url("../img/icon-basket-hover.svg")
 }
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -501,10 +549,22 @@ h1,
 }
 .site-navigation__item--color a {
   background-color: #d07058;
+  border-radius: 15px;
+  text-decoration: none;
 }
 .user-navigation__item--basket2 a{
   background-color: #f8f7f4;
   color: #323232;
+}
+.user-navigation__item--basket2 a::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  left: 17px;
+  background-image: url("../img/basket-red.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 .breadcrumbs__item,
 .breadcrumbs span {
@@ -642,6 +702,9 @@ h1,
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat; 
   margin-bottom: 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .map__info {
   width: 22%;
