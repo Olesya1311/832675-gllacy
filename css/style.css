@@ -200,7 +200,7 @@ img {
   padding: 0;
   padding-top: 9px;
   margin: 0;
-  margin-right: 24px;
+  margin-right: 10px;
 }
 .site-navigation {
   margin: 0;
@@ -229,7 +229,7 @@ img {
   padding-top: 7px;
   padding-bottom: 7px;
   border-radius: 15px;
-  
+  margin-left: 10px;
 }
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -261,20 +261,24 @@ h1,
   padding: 0;
   margin: 0;
   margin-left: auto;
-  margin-top: -15px;
+  
   text-align: right;
   color: #ffffff;
+  margin-bottom: 7px;
 }
 .shop-info__time {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px; 
+  margin: 0;
+  padding-bottom: 5px;
 }
 .shop-info__phone {
   color: #ffffff;
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
+ 
 }
 .features {
   display: flex;
