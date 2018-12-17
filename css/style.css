@@ -340,7 +340,7 @@ img {
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 .catalog-menu__item {
-  background-color: #f8f7f4;
+  
   color: #323232;
   margin: 0;
   padding: 0;
@@ -349,7 +349,7 @@ img {
   font-weight: 400;
   line-height: 16px;
   margin-bottom: 3px;
-  border-radius: 0;
+  
 }
 .catalog-menu a {
   color: #323232;
@@ -368,15 +368,22 @@ img {
   border-radius: 0;
 }
 .catalog-menu__item--mod {
-  border-bottom: 1px solid rgba(50, 50, 50, 0.2);
   padding-top: 4px;
   padding-bottom: 5px; 
+  margin-bottom: 5px;
+}
+.catalog-menu__item--mod::after {
+  position: absolute;
+  content: "";
+  top: 37px;
+  width: 128px;
+  height: 1px;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.2);
   margin-left: 6px;
   margin-right: 9px;
 }
 .catalog-menu__item--mod a {
   font-weight: 700;
-  padding-left: 15px;
 }
 .catalog-menu a:hover,
 .catalog-menu a:focus {
