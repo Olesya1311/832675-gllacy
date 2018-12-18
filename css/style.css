@@ -809,6 +809,7 @@ img {
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  margin-bottom: 8px;
 }
 .catalog-list__item {
   display: flex;
@@ -822,13 +823,15 @@ img {
   padding-bottom: 22px;
   margin-bottom: 9px;
 }
-.catalog-list__item:hover {
+.catalog-list__item:hover,
+.catalog-list__item:focus {
   background-color: #ffffff47;
   margin-bottom: -40px;
   border-radius: 5px;
   z-index: 10;
 }
-.catalog-list__item:hover .catalog-list__button {
+.catalog-list__item:hover .catalog-list__button,
+.catalog-list__item:focus .catalog-list__button {
   display: block;
 }
 .catalog-list__img {
@@ -877,7 +880,7 @@ img {
 .promotion {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 .promotion-block {
   color: #ffffff;
