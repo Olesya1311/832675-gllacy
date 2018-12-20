@@ -567,6 +567,7 @@ img {
   padding-bottom: 22px;
 }
 .features__text {
+  position: relative;
   width: calc(50% - 91px);
   font-size: 16px;
   font-weight: 400;
@@ -578,6 +579,27 @@ img {
   padding-left: 76px;
   padding-right: 15px;
 } 
+.features__text::before {
+  position: absolute;
+  content: "";
+  width: 49px;
+  height: 49px;
+  left: 19px;
+  top: -15px;
+}
+.features__text:first-of-type::before {
+  background-image: url("../img/icon-ice-cream.svg");
+}
+.features__text:nth-of-type(2)::before {
+  background-image: url("../img/icon-cow.svg");
+}
+.features__text:nth-of-type(3)::before {
+  background-image: url("../img/icon-leaf.svg");
+}
+.features__text:nth-of-type(4)::before {
+  background-image: url("../img/icon-temp.svg");
+}
+
 .wrapper-article {
   margin-bottom: 39px;
   display: flex;
