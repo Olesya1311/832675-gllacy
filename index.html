@@ -184,19 +184,6 @@
 				</div>
 			</div>
 		</section>
-		<section class="modal">
-			<h3 class="modal__title">Мы обязательно вам ответим!</h3>
-			<button class="modal__button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-			<form class="modal-form">
-				<label class="visually-hidden" for="modal-name">Ваше имя</label>
-				<input id="modal-name" type="text" name="name" placeholder="Как вас зовут?">
-				<label class="visually-hidden" for="modal-email">Ваша почта</label>
-				<input id="modal-email" type="email" name="email2" placeholder="Ваша почта для ответа?">
-				<label class="visually-hidden" for="modal-comment">Текст сообщения</label>
-				<textarea id="modal-comment" rows="5" placeholder="Напишите что-нибудь..."></textarea>
-				<button class="button modal__button" type="submit">Отправить</button>
-			</form>
-		</section>
 	</main>
 	<footer class="main-footer container">
 		<ul class=social>
@@ -225,7 +212,27 @@
 		</div>
 	</footer>
 	</div>
-	<!--<script src="https://api-maps.yandex.ru/2.1/?apikey=abc93757-a416-4cb5-b275-d8097f400b4f&lang=ru_RU" type="text/javascript"></script>
-	<script src="/js/script.js"></script>-->
+	<div class="modal-wrapper">
+		<section class="modal">
+			<h3 class="modal__title">Мы обязательно вам ответим!</h3>
+			<button class="modal__button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+			<form class="modal-form">
+				<label class="visually-hidden" for="modal-name">Ваше имя</label>
+				<input id="modal-name" type="text" name="name" placeholder="Как вас зовут?">
+				<label class="visually-hidden" for="modal-email">Ваша почта</label>
+				<input id="modal-email" type="email" name="email2" placeholder="Ваша почта для ответа?">
+				<label class="visually-hidden" for="modal-comment">Текст сообщения</label>
+				<textarea id="modal-comment" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+				<button class="button modal__button" type="submit">Отправить</button>
+			</form>
+		</section>
+	</div>
+		
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=abc93757-a416-4cb5-b275-d8097f400b4f&lang=ru_RU" type="text/javascript"></script>
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
 </body>
 </html>

@@ -19,5 +19,22 @@ ymaps.ready(function () {
               iconImageOffset: [-40, -140]
           });
            myMap.geoObjects.add(myPlacemark);
-    
-  })
+  });
+
+//modal
+$(document).ready(function(){
+    $('.map__button').click(function(){
+        $('.modal-wrapper').show();
+        $('.modal-wrapper').animate({
+            opacity:1
+        },300,slideDownModal);
+    });
+    function slideDownModal(){
+        $('.modal').animate({
+            top:'50%'
+        },500,function(){});
+    }
+    $('.modal__button-close').click(function(){
+        $('.modal-wrapper').hide();
+    });
+});
