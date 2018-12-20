@@ -875,6 +875,16 @@ img {
   margin-right: auto;
   text-shadow: none;
 }
+.catalog-list__item--hit {
+  position: relative;
+}
+.catalog-list__item--hit::before {
+  position: absolute;
+  content: "";
+  width: 61px;
+  height: 61px;
+  background-image: url("../img/icon-hit.svg");
+}
 .promotion {
   display: flex;
   justify-content: space-between;
