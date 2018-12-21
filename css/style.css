@@ -322,6 +322,7 @@ img {
   text-decoration: none;
 }
 .catalog-menu {
+  display: block;
   position: absolute;
   list-style: none;
   background-color: #f8f7f4;
@@ -335,6 +336,7 @@ img {
   left: -6px;
   z-index: 10;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 }
 .catalog-menu__item {
   
@@ -364,11 +366,7 @@ img {
   padding-right: 8px;
   border-radius: 0;
 }
-.catalog-menu__item--mod {
-  padding-top: 4px;
-  padding-bottom: 5px; 
-  margin-bottom: 5px;
-}
+
 .catalog-menu__item--mod::after {
   position: absolute;
   content: "";
@@ -381,6 +379,8 @@ img {
 }
 .catalog-menu__item--mod a {
   font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 12px;
 }
 .catalog-menu a:hover,
 .catalog-menu a:focus {
