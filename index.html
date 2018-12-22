@@ -25,7 +25,7 @@
 						<ul class="catalog-menu">
 							<li class="catalog-menu__item catalog-menu__item--mod"><a href="#">Новинки</a></li>
 							<li class="catalog-menu__item"><a href="catalog.html">Сливочное</a></li>
-							<li class="catalog-menu__item catalog-menu__item--rose"><a href="#">Щербеты</a></li>
+							<li class="catalog-menu__item"><a href="#">Щербеты</a></li>
 							<li class="catalog-menu__item"><a href="#">Фруктовый лед</a></li>
 							<li class="catalog-menu__item"><a href="#">Мелорин</a></li>
 						</ul>
@@ -170,29 +170,19 @@
 			</section>
 		</div>
 		<section class="map">
-			<div class="container">
-				<div class="map__info">
-					<p>Адрес главного офиса<br> и офлайн-магазина:</p>
-					<b>ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</b>
-					<p>Для заказов по телефону:</p>
-					<a href="tel:+78124502525" class="map__phone">8 812 450-25-25</a>
-					<p class="map__time">(с 10 до 20 ежедневно)</p>
-					<button class="button map__button">Форма обратной связи</button>
+			<div id="map"></div>
+			<div class="map-wrapper">
+				<div class="container">
+					<div class="map__info">
+						<p>Адрес главного офиса<br> и офлайн-магазина:</p>
+						<b>ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</b>
+						<p>Для заказов по телефону:</p>
+						<a href="tel:+78124502525" class="map__phone">8 812 450-25-25</a>
+						<p class="map__time">(с 10 до 20 ежедневно)</p>
+						<button class="button map__button">Форма обратной связи</button>
+					</div>
 				</div>
 			</div>
-		</section>
-		<section class="modal">
-			<h3 class="modal__title">Мы обязательно вам ответим!</h3>
-			<button class="modal__button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-			<form class="modal-form">
-				<label class="visually-hidden" for="modal-name">Ваше имя</label>
-				<input id="modal-name" type="text" name="name" placeholder="Как вас зовут?">
-				<label class="visually-hidden" for="modal-email">Ваша почта</label>
-				<input id="modal-email" type="email" name="email2" placeholder="Ваша почта для ответа?">
-				<label class="visually-hidden" for="modal-comment">Текст сообщения</label>
-				<textarea id="modal-comment" rows="5" placeholder="Напишите что-нибудь..."></textarea>
-				<button class="button modal__button" type="submit">Отправить</button>
-			</form>
 		</section>
 	</main>
 	<footer class="main-footer container">
@@ -214,7 +204,7 @@
 		</div>
 		<div class="developer-info">
 			<a class="developer-info__link" href="https://htmlacademy.ru/intensive/htmlcss">
-				<img src="img/logo-htmlacademy-small.svg" width="107" height="46" alt="HTML academy">
+				<img src="img/logo-htmlacademy.svg" width="107" height="46" alt="HTML academy">
 				<p>Сделано в
 				<span class="developer-info__text">HTML Academy</span>© 2017
 				</p>
@@ -222,5 +212,27 @@
 		</div>
 	</footer>
 	</div>
+	<div class="modal-wrapper">
+		<section class="modal">
+			<h3 class="modal__title">Мы обязательно вам ответим!</h3>
+			<button class="modal__button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+			<form class="modal-form">
+				<label class="visually-hidden" for="modal-name">Ваше имя</label>
+				<input id="modal-name" type="text" name="name" placeholder="Как вас зовут?">
+				<label class="visually-hidden" for="modal-email">Ваша почта</label>
+				<input id="modal-email" type="email" name="email2" placeholder="Ваша почта для ответа?">
+				<label class="visually-hidden" for="modal-comment">Текст сообщения</label>
+				<textarea id="modal-comment" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+				<button class="button modal__button" type="submit">Отправить</button>
+			</form>
+		</section>
+	</div>
+		
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=abc93757-a416-4cb5-b275-d8097f400b4f&lang=ru_RU" type="text/javascript"></script>
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
 </body>
 </html>
