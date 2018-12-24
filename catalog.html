@@ -32,12 +32,11 @@
       </ul>
       <ul class="user-navigation">
         <li class="user-navigation__item user-navigation__item--search">
-            <a href="#" class="user-navigation__link"><span class="visually-hidden">Поиск</span>
+            <a href="#" class="user-navigation__link"><span class="visually-hidden">Поиск</span></a>
               <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
                 <label  class="visually-hidden" for="search-line">Что ищем?</label>
                 <input id="search-line" type="search" name="search" placeholder="Что ищем?">
               </form>
-              </a>
         </li>
         <li class="user-navigation__item user-navigation__item--input">
           <a href="#">Вход</a>
@@ -52,7 +51,7 @@
           </form>
         </li>
         <li class="user-navigation__item user-navigation__item--basket2">
-          <a href="#" aria-label="Корзина">2 товара
+          <a href="#" aria-label="Корзина">2 товара</a>
             <div class="basket-wrapper">
               <ul class="basket-form">
                 <li class="basket-form__line">
@@ -60,7 +59,7 @@
                   <div class="basket-form__img">
                     <img src="img/plombir-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
                   </div>
-                  Пломбир с апельсиновым джемом <span>1,5 кг х</span><span>200 руб.</span><span>300 руб.</span>
+                  <p>Пломбир с апельсиновым джемом</p> <span>1,5 кг х</span><span>200 руб.</span><span>300 руб.</span>
                 </li>
                 <li class="basket-form__line">
                   <button class="basket-form__close" type="button"><span class="visually-hidden">Закрыть</span></button>
@@ -68,13 +67,13 @@
                     <img src="img/plombir-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой 
                     из белого шоколада">
                   </div>
-                  Клубничный пломбир с присыпкой из белого шоколада<span>1,5 кг х</span><span>300 руб.</span><span>450 руб.</span>
+                  <p>Клубничный пломбир с присыпкой из белого шоколада</p><span>1,5 кг х</span><span>300 руб.</span><span>450 руб.</span>
                 </li>
               </ul>
               <p class="basket-form__summ">Итого:750 руб.</p>
               <button class="button basket-form__button" type="button">Оформить заказ</button>
             </div>
-          </a> 
+          
         </li>
       </ul>
     </nav>
@@ -90,7 +89,75 @@
       <a class="breadcrumbs__item">Сливочное</a>
     </div>
     <h1 class="container__title">Сливочное мороженое</h1>
-    <!--здесь будет сложная панель выбора с разными формами-->
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <div class="filter-sorting">
+        <label for="sorting">Сортировка:</label>
+        <select id="sorting" name="sorting">
+          <option value="popular" selected>по популярности</option>
+          <option value="min-price">сначала недорогие</option>
+          <option value="max-price">сначала дорогие</option>
+          <option value="fat">по жирности</option>
+        </select>
+      </div>
+      <div class="filter-price">
+        <div class="filter-price__title">Цена: 100 руб. - 500 руб.</div>
+        <div class="filter-price__range">
+          <div class="filter-price__scale">
+            <div class="filter-price__bar"></div>
+          </div>
+          <div class="filter-price__toogle filter-price__toogle--min"></div>
+          <div class="filter-price__toogle filter-price__toogle--max"></div>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Жирность:</legend>
+        <ul class="filter-block"> 
+          <li class="filter-item">
+            <input class="visually-hidden filter-item__input filter-item__input--radio" type="radio" name="fat-group" value="0" id="fat0">
+            <label for="fat0">0%</label>
+          </li>
+          <li class="filter-item">
+            <input class="visually-hidden filter-item__input filter-item__input--radio" type="radio" name="fat-group" value="10" id="fat10" checked>
+            <label for="fat10">до 10%</label>
+          </li>
+          <li class="filter-item">
+            <input class="visually-hidden filter-item__input filter-item__input--radio" type="radio" name="fat-group" value="20" id="fat20">
+            <label for="fat20">до 30%</label>
+          </li>
+          <li class="filter-item">
+            <input class="visually-hidden filter-item__input filter-item__input--radio" type="radio" name="fat-group" value="30" id="fat30">
+            <label for="fat30">выше 30%</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Наполнители:</legend>
+        <ul class="filter-block">
+          <li class="filter-item">
+            <input class="visually-hidden filter-item__input filter-item__input--checkbox" type="checkbox" name="chokolate" id="chokolate" checked>
+            <label for="chokolate">шоколадные</label>
+          </li>
+          <li class="filter-item">
+            <input class="visually-hidden filter-item__input filter-item__input--checkbox" type="checkbox" name="shugar" id="shugar" checked>
+            <label for="shugar">сахарные присыпки</label>
+          </li>
+          <li class="filter-item">
+            <input class="visually-hidden filter-item__input filter-item__input--checkbox" type="checkbox" name="fruct" id="fruct">
+            <label for="fruct">фрукты</label>
+          </li>
+          <li class="filter-item">
+            <input class="visually-hidden filter-item__input filter-item__input--checkbox" type="checkbox" name="syrop" id="syrop">
+            <label for="syrop">сиропы</label>
+          </li>
+          <li class="filter-item">
+            <input class="visually-hidden filter-item__input filter-item__input--checkbox" type="checkbox" name="djem" id="djem">
+            <label for="djem">джемы</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="filter__button" type="submit">Применить</button>
+    </section>
     <section class="products">
       <ul class="catalog-list">
         <li class="catalog-list__item">
