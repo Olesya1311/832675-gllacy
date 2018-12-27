@@ -763,6 +763,8 @@ img {
   padding: 0;
   margin-right: auto;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: -15px;
   
 }
 .social__button {
@@ -774,7 +776,10 @@ img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 11px;
+}
+.social__item:last-child .social__button {
+  margin-right: 6px;
 }
 .social__button:hover,
 .social__button:focus {
@@ -797,23 +802,23 @@ img {
   display: flex;
   margin: 0;
   padding: 0;
- 
   justify-content: space-between;
-  
+  margin-top: -18px;
 }
 .links a{
   display: block;
   font-family: Roboto;
   font-size: 13px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 22px;
   color: #ffffff;
   margin: 0;
   padding: 0;
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.2);
-
-  padding-right: 32px;
+}
+.links__block1 {
+  margin-right: 32px;
 }
 .links__block1 .links__item:first-child {
   font-weight: bold;
@@ -825,8 +830,8 @@ img {
   width: 15px;
   height: 13px;
   background-image: url("../img/icon-heart.svg");
-  left: -20px;
-  top: 2px;
+  left: -22px;
+  top: 5px;
 }
 .developer-info {
   display: flex;
@@ -835,6 +840,7 @@ img {
   padding: 0;
   margin-left: auto;
   margin-bottom: 26px;
+  
 }
 .developer-info__link {
   font-family: Roboto;
