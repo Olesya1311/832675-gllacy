@@ -1407,7 +1407,7 @@ color: #323232;
   padding-left: 15px;
 }
 .filter-sorting select {
-  width: 194px;
+  width: 164px;
   height: 37px;
   color: #ffffff;
   font-family: Roboto;
@@ -1418,6 +1418,8 @@ color: #323232;
   border-radius: 20px;
   vertical-align: middle;
   border: none;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .filter-sorting select:hover {
   color: #323232;
@@ -1532,4 +1534,84 @@ color: #323232;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+}
+.filter-item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+.filter-item__input--checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 20px 20px;
+  opacity: 0.8;
+  
+}
+.filter-item__input--checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: -32px;
+  
+  width: 24px;
+  height: 20px;
+  
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 24px 20px;
+  opacity: 0.8;
+}
+.filter-item__input--checkbox:checked + label::before {
+  display: none;
+}
+.filter-item__input--radio + label {
+  color: #ffffff;
+}
+
+.filter-item__input--radio + label::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: -2px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 22px 22px;
+  opacity: 0.8;
+}
+.filter-item__input--radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: -2px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 22px 22px;
+  opacity: 0.8;
+}
+.filter-item__input--radio:checked + label::before {
+  display: none;
+}
+.filter-item__input:hover + label::before,
+.filter-item__input:focus + label::before {
+  opacity: 1;
+}
+.filter-item__input:checked:hover + label::after,
+.filter-item__input:checked:focus + label::after {
+  opacity: 1;
 }
