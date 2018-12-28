@@ -48,7 +48,7 @@ img {
 .slider {
   position: relative;
   
-  padding-top: 266px;
+  padding-top: 267px;
   
   text-align: center;
   color: #ffffff;
@@ -73,7 +73,7 @@ img {
   font-weight: 700;
   line-height: 60px;
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 }
 .button {
   display: inline-block;
@@ -108,6 +108,13 @@ img {
   font-weight: 700;
   line-height: 44px;
   margin-bottom: 41px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  padding-left: 42px;
+  padding-right: 42px;
 }
 .slider-point {
   position: absolute;
@@ -560,7 +567,7 @@ img {
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
- 
+  margin-right: -1px;
 }
 .features {
   display: flex;
@@ -584,10 +591,11 @@ img {
   padding-left: 21px;
   padding-top: 24px;
   padding-bottom: 22px;
+  padding-right: 21px;
 }
 .features__text {
   position: relative;
-  width: calc(50% - 91px);
+  width: calc(50% - 97px);
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -638,7 +646,7 @@ img {
   padding: 0;
   padding-left: 20px;
   padding-top: 23px;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -660,7 +668,7 @@ img {
   margin: 0;
   padding-left: 20px;
   padding-right: 258px;
-  padding-bottom: 78px;
+  padding-bottom: 80px;
   color: #323232;
   font-size: 24px;
   font-weight: 700;
@@ -698,7 +706,7 @@ img {
   padding-left: 21px;
   padding-right: 21px;
   padding-top: 29px;
-  padding-bottom: 35px;
+  padding-bottom: 36px;
   color: #5a5a5a;
   font-size: 16px;
   font-weight: 400;
@@ -706,7 +714,7 @@ img {
   text-align: left;
 }
 .subscribe__form input {
-  width: 355px;
+  width: 353px;
   border-radius: 5px;
   border: 1px solid rgba(178, 178, 178, 0.52);
   margin: 0;
@@ -714,7 +722,7 @@ img {
   margin-left: 20px;
   padding-top: 9px;
   padding-bottom: 9px;
-  padding-left: 12px;
+  padding-left: 14px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -742,7 +750,7 @@ img {
   outline: none;
 }
 .subscribe__button {
-  padding: 11px 19px 10px 19px; 
+  padding: 10px 19px 10px 19px; 
   vertical-align: top;
   float: right;
   margin-right: 20px;
@@ -854,6 +862,7 @@ img {
 .developer-info__link img {
   padding: 0;
   margin: 0;
+  padding-left: 2px;
 }
 .developer-info__link p {
   padding: 0;
@@ -1077,10 +1086,15 @@ margin-right: 28px;
   color: #ffffff;
   margin: 0;
   padding: 0;
-  margin-top: -57px;
+  margin-top: -55px;
+  margin-left: -2px;
+}
+.catalog-list__text span:first-child {
+  margin-right: 4px;
 }
 .catalog-list__text--1 {
   font-size: 30px;
+  margin-left: 0px;
 }
 .catalog-list__link {
   color: #ffffff;
@@ -1122,7 +1136,7 @@ margin-right: 28px;
 }
 .promotion-block {
   color: #ffffff;
-  padding-left: 20px;
+  padding-left: 19px;
   padding-top: 17px;
   padding-right: 21px;
   padding-bottom: 23px;
@@ -1136,7 +1150,7 @@ margin-right: 28px;
   text-align: left; 
   margin: 0;
   padding: 0;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 .promotion-block p {
   font-size: 18px;
@@ -1154,7 +1168,7 @@ margin-right: 28px;
   line-height: 24px;
   text-align: center;
   float: right;
-  padding: 12px 22px;
+  padding: 11px 22px 11px 22px;
 }
 .promotion-block--color1 {
   background-color: #630b26;
@@ -1192,7 +1206,7 @@ margin-right: 28px;
   margin-right: auto;
 }
 .map__info {
-  
+  font-family: "Roboto",Arial , sans-serif;
   width: 257px;
   padding-top: 28px;
   padding-left: 25px;
@@ -1203,11 +1217,8 @@ margin-right: 28px;
   border-radius: 15px;
   text-align: left;
   margin-top: 63px;
- 
- 
   margin-right: 0;
   margin-left: auto;
- 
 }
 .map__info p {
   display: block;
@@ -1235,6 +1246,7 @@ margin-right: 28px;
   margin: 0;
   padding: 0;
   padding-bottom: 17px;
+  padding-top: 2px;
 }
 .map__phone {
   font-family: "Roboto", Arial, sans-serif;
