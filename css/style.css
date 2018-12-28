@@ -1622,6 +1622,16 @@ color: #323232;
   font-weight: 500;
   line-height: 18px;
 }
+.filter-block--mod1 .filter-item:first-child {
+  padding-left: 30px;
+}
+.filter-block--mod2 .filter-item {
+  padding-left: 54px;
+  
+}
+.filter-block--mod2 .filter-item:first-child {
+  padding-left: 32px;
+}
 .filter-item label {
   position: relative;
   display: block;
