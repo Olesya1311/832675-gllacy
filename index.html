@@ -11,8 +11,8 @@
 
 <body>
 	<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
 	<div class="site-wrapper">
 	<header class="main-header container">
 		<nav class="main-navigation">
@@ -22,13 +22,13 @@
 			<ul class="site-navigation">
 				<li class="site-navigation__item">
 					<a href="catalog.html">Каталог</a>
-						<ul class="catalog-menu">
-							<li class="catalog-menu__item catalog-menu__item--mod"><a href="#">Новинки</a></li>
-							<li class="catalog-menu__item"><a href="catalog.html">Сливочное</a></li>
-							<li class="catalog-menu__item"><a href="#">Щербеты</a></li>
-							<li class="catalog-menu__item"><a href="#">Фруктовый лед</a></li>
-							<li class="catalog-menu__item"><a href="#">Мелорин</a></li>
-						</ul>
+					<ul class="catalog-menu">
+						<li class="catalog-menu__item catalog-menu__item--mod"><a href="#">Новинки</a></li>
+						<li class="catalog-menu__item"><a href="catalog.html">Сливочное</a></li>
+						<li class="catalog-menu__item"><a href="#">Щербеты</a></li>
+						<li class="catalog-menu__item"><a href="#">Фруктовый лед</a></li>
+						<li class="catalog-menu__item"><a href="#">Мелорин</a></li>
+					</ul>
 				</li>
 				<li class="site-navigation__item"><a href="delivery.html">Доставка и оплата</a></li>
 				<li class="site-navigation__item"><a href="about.html">О Компании</a></li>
@@ -36,26 +36,26 @@
 			<ul class="user-navigation">
 				<li class="user-navigation__item user-navigation__item--search">
 					<a href="#" class="user-navigation__link"><span class="visually-hidden">Поиск</span></a>
-						<form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-							<label  class="visually-hidden" for="search-line">Что ищем?</label>
-							<input id="search-line" type="search" name="search" placeholder="Что ищем?">
-						</form>
-					
+					<form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+						<label  class="visually-hidden" for="search-line">Что ищем?</label>
+						<input id="search-line" type="search" name="search" placeholder="Что ищем?">
+					</form>	
 				</li>
 				<li class="user-navigation__item user-navigation__item--input">
 					<a href="#">Вход</a>
-						<form class="enter-form" action="https://echo.htmlacademy.ru"	method="POST">
-							<label class="visually-hidden" for="enter-email">Электронная почта</label>
-							<input id="enter-email" type="email" name="email" placeholder="Электронная почта">
-							<label class="visually-hidden" for="enter-password">Пароль</label>
-							<input id="enter-password" type="password" name="password" placeholder="Пароль">
-							<button class="button enter-form__button" type="submit">Войти</button>
-							<a class="enter-form__link" href="#">Забыли пароль?</a>
-							<a class="enter-form__link" href="#">Новая регистрация</a>
-						</form>
+					<form class="enter-form" action="https://echo.htmlacademy.ru"	method="POST">
+						<label class="visually-hidden" for="enter-email">Электронная почта</label>
+						<input id="enter-email" type="email" name="email" placeholder="Электронная почта">
+						<label class="visually-hidden" for="enter-password">Пароль</label>
+						<input id="enter-password" type="password" name="password" placeholder="Пароль">
+						<button class="button enter-form__button" type="submit">Войти</button>
+						<a class="enter-form__link" href="#">Забыли пароль?</a>
+						<a class="enter-form__link" href="#">Новая регистрация</a>
+					</form>
 				</li>
 				<li class="user-navigation__item user-navigation__item--basket1">
-					<a href="#" aria-label="Корзина">Пусто</a></li>
+					<a href="#" aria-label="Корзина">Пусто</a>
+				</li>
 			</ul>
 		</nav>
 		<div class="shop-info">
@@ -160,7 +160,7 @@
 				</article>
 				<div class="subscribe">
 					<p class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у
-				нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+					нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
 					<form class="subscribe__form" action="https://echo.htmlacademy.ru" method="POST">
 						<label class="visually-hidden" for="subscribe-email">Электронная почта</label>
 						<input id="subscribe-email" type="email" name="email1" placeholder="Электронная почта">
@@ -226,57 +226,8 @@
 				<a href="form.html" class="button modal__button">Отправить</a>
 			</form>
 		</section>
-	</div>
-		
+	</div>	
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=abc93757-a416-4cb5-b275-d8097f400b4f&lang=ru_RU" type="text/javascript"></script>
   <script src="/js/script.js"></script>
-  <script>
-	  var link = document.querySelector(".map__button");
-	  var popup = document.querySelector(".modal-wrapper");
-	  var close = popup.querySelector(".modal__button-close");
-	  var form = popup.querySelector("form");
-	  var name = popup.querySelector("[name=name]");
-	  var email = popup.querySelector("[name=email2]");
-	  var isStorageSupport = true;
-  	  var storage = "";
-  
-      try {
-        storage = localStorage.getItem("name");
-      } catch (err) {
-        isStorageSupport = false;
-      }
-	  link.addEventListener("click", function(evt) {
-		evt.preventDefault();
-		popup.classList.add("modal-show");
-		if (storage) {
-			name.value = storage;
-			email.focus();
-		} else {
-		name.focus();
-		}
-	  });
-	  close.addEventListener("click", function (evt) {
-		  evt.preventDefault();
-		  popup.classList.remove("modal-show");
-	  });
-	  form.addEventListener("submit", function (evt) {
-		if (!name.value || !email.value) {
-		   evt.preventDefault();
-		   console.log("Нужно ввести имя и email");
-		} else {
-		  if (isStorageSupport) {	
-			localStorage.setItem("name", name.value);
-		  }
-		}
-		});
-		window.addEventListener("keydown", function (evt) {
-    	  if (evt.keyCode === 27) {
-      		evt.preventDefault();
-      		if (popup.classList.contains("modal-show")) {
-        	  popup.classList.remove("modal-show");
-      		}
-    	  }
-  		});
-  </script>
 </body>
 </html>
