@@ -1179,7 +1179,7 @@ margin-right: 28px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 100%;
+  width: 1146px;
   margin-bottom: 8px;
 }
 .catalog-list__item {
@@ -1199,7 +1199,7 @@ margin-right: 28px;
 }
 .catalog-list__item:hover,
 .catalog-list__item:focus {
-  background-color: #ffffff47;
+  background-color: rgba(248, 247, 244, 0.2);
   margin-bottom: -50px;
   border-radius: 5px;
   z-index: 10;
