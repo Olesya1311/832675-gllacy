@@ -14,15 +14,14 @@ ymaps.ready(function () {
   });
     myMap.geoObjects.add(myPlacemark);
   });
-
   var link = document.querySelector(".map__button");
   var popup = document.querySelector(".modal-wrapper");
   var close = popup.querySelector(".modal__button-close");
   var form = popup.querySelector("form");
-  var name = popup.querySelector("[name=name]");
+  var formName = popup.querySelector("[name=fname]");
   var email = popup.querySelector("[name=email2]");
   var isStorageSupport = true;
-    var storage = "";
+  var storage = "";
 
   try {
     storage = localStorage.getItem("name");
@@ -33,10 +32,11 @@ ymaps.ready(function () {
     evt.preventDefault();
     popup.classList.add("modal-show");
     if (storage) {
-        name.value = storage;
-        email.focus();
-    } else {
-    name.focus();
+      formName.value = storage;
+      email.focus();
+    } 
+    else {
+      formName.focus();
     }
   });
   close.addEventListener("click", function (evt) {
@@ -44,12 +44,12 @@ ymaps.ready(function () {
       popup.classList.remove("modal-show");
   });
   form.addEventListener("submit", function (evt) {
-    if (!name.value || !email.value) {
+    if (!formName.value || !email.value) {
        evt.preventDefault();
        console.log("Нужно ввести имя и email");
     } else {
       if (isStorageSupport) {	
-        localStorage.setItem("name", name.value);
+        localStorage.setItem("name", formName.value);
       }
     }
     });
