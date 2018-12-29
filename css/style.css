@@ -1706,7 +1706,7 @@ margin-right: 28px;
   padding-left: 15px;
 }
 .filter-sorting select {
-  width: 164px;
+  min-width: 194px;
   height: 37px;
   color: #ffffff;
   font-family: "Roboto", Arial, sans-serif;
