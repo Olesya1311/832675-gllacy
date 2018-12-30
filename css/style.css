@@ -1412,6 +1412,56 @@ margin-right: 28px;
   padding: 11px 28px;
   margin-top: 24px;
 }
+@keyframes bounce {
+  0% {
+    transform: translateX(350px) translateY(50px);
+    -webkit-transform: translateX(350px) translateY(50px);
+    -moz-transform: translateX(350px) translateY(50px);
+    -ms-transform: translateX(350px) translateY(50px);
+    -o-transform: translateX(350px) translateY(50px);
+}
+
+  70% {
+    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+    -moz-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+    -o-transform: translateY(40px);
+}
+
+  90% {
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+}
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 .modal-wrapper {
   display: none;
   position: fixed;
@@ -1447,6 +1497,10 @@ margin-right: 28px;
 }
 .modal-show {
   display: block;
+  animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
 }
 .modal__title {
   margin: 0;

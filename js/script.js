@@ -16,6 +16,7 @@ ymaps.ready(function () {
   });
   var link = document.querySelector(".map__button");
   var popup = document.querySelector(".modal-wrapper");
+  var modal = document.querySelector(".modal");
   var close = popup.querySelector(".modal__button-close");
   var form = popup.querySelector("form");
   var formName = popup.querySelector("[name=fname]");
@@ -42,10 +43,14 @@ ymaps.ready(function () {
   close.addEventListener("click", function (evt) {
       evt.preventDefault();
       popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
   });
   form.addEventListener("submit", function (evt) {
     if (!formName.value || !email.value) {
        evt.preventDefault();
+       popup.classList.remove("modal-error");
+       popup.offsetWidth = popup.offsetWidth;
+       popup.classList.add("modal-error");
        console.log("Нужно ввести имя и email");
     } else {
       if (isStorageSupport) {	
@@ -58,6 +63,7 @@ ymaps.ready(function () {
           evt.preventDefault();
           if (popup.classList.contains("modal-show")) {
           popup.classList.remove("modal-show");
+          popup.classList.remove("modal-error");
           }
       }
       });
