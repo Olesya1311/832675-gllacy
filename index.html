@@ -6,7 +6,7 @@
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -170,7 +170,7 @@
 			</section>
 		</div>
 		<section class="map">
-			<div id="map"></div>
+			<div id="map" class="map__item"></div>
 			<div class="map-wrapper">
 				<div class="container">
 					<div class="map__info">
@@ -179,7 +179,7 @@
 						<p>Для заказов по телефону:</p>
 						<a href="tel:+78124502525" class="map__phone">8 812 450-25-25</a>
 						<p class="map__time">(с 10 до 20 ежедневно)</p>
-						<button class="button map__button">Форма обратной связи</button>
+						<a href="form.html" class="button map__button">Форма обратной связи</a>
 					</div>
 				</div>
 			</div>
@@ -223,7 +223,7 @@
 				<input id="modal-email" type="email" name="email2" placeholder="Ваша почта для ответа?">
 				<label class="visually-hidden" for="modal-comment">Текст сообщения</label>
 				<textarea id="modal-comment" rows="5" placeholder="Напишите что-нибудь..."></textarea>
-				<a href="form.html" class="button modal__button">Отправить</a>
+				<button type="submit" class="button modal__button">Отправить</button>
 			</form>
 		</section>
 	</div>	
